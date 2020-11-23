@@ -5,7 +5,6 @@ from cryptography.fernet import Fernet
 
 class App:
 	def __init__(self):
-		self.db = Database('database.db')
 		self.ui = UI()
 
 		with open('.user', 'r') as reader:
@@ -13,6 +12,7 @@ class App:
 
 		key = self.readOrCreateKey()
 		self.fernet = Fernet(key)
+		self.db = Database('database.db', key)
 		self.init()
 		self.login()
 

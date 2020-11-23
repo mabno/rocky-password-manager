@@ -1,9 +1,10 @@
-import sqlite3
+from pysqlcipher3 import dbapi2 as sqlite3
 
 class Database:
-	def __init__(self, file):
+	def __init__(self, file, key):
 		self.connection = sqlite3.connect(file)
 		self.cursor = self.connection.cursor()
+		self.cursor.execute("PRAGMA key='{}'".format(key.decode()))
 		self.cursor.execute("""
 			CREATE TABLE IF NOT EXISTS password
 			(
