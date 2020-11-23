@@ -23,8 +23,7 @@ This program gives authentication option to protect your passwords of an unwante
 3. No edit ***.user***, just edit ***.keypath*** with the path where you want save the ***.key*** file. The ***.key*** file will contain the cryptographic key for you authentication (must be secret) 
 
 5. Install required modules
-> sudo apt install sqlcipher libsqlcipher0 libsqlcipher-dev
-> pip3 install cryptography pysqlcipher3 termcolor
+> sudo apt install sqlcipher libsqlcipher0 libsqlcipher-dev && pip3 install cryptography pysqlcipher3 termcolor
 
 6. Run index.py
 
