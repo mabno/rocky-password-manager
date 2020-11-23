@@ -1,6 +1,6 @@
 # Rocky Password Manager
 Rocky Password Manager is a little project in Python 3 for practice. It's a console program in which you will be able save, update, read and delete your passwords (and username if you want) of all services on what you are registered.
-This program gives authentication option to protect your passwords of a unwanted reader.
+This program gives authentication option to protect your passwords of an unwanted reader.
 ## Features
 
  - Python3
